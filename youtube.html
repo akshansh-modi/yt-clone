@@ -15,8 +15,8 @@
             margin-bottom:12px;
         }
 .thumbnail{
-display:block;
-width:300px;/* to keep same shape heaight will also change*/
+width:100%;
+/* to keep same shape heaight will also change*/
 
 object-fit:cover;/*contain cover */
 object-position: bottom;
@@ -29,6 +29,17 @@ display:block;
     font-size:20px;
     margin-left:12px;
 }
+
+
+.vedio-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:16px;
+    row-gap:40px;
+
+}
+
+
 .vedio-title{
     margin-top:0px;
     font-size:14px;
@@ -40,24 +51,25 @@ display:block;
     display:inline-block;
 }
 .vedio-preview{
-    width:300px;
-    display:inline-block;
-    vertical-align: top;
-    margin-right:15px;
 }
 .profile-picture{
     width:40px;
  border-radius:50px;
 
 }
+
+.vedio-info-grid{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+
 .channel-picture{
-display:inline-block;
-width:50px;
-vertical-align:top;
+
 }
 .vedio-info{
-display:inline-block;
-width:200px;
+
 }
 .vedio-stats,
 .vedio-author{
@@ -77,72 +89,208 @@ width:200px;
 </head>
 <body>
     <input class="search-bar" type="text" placeholder="Search">
-    <div class="vedio-preview">
+    <div class="vedio-grid">
 
-        <div class="thumbnail-row">
+        <div class="vedio-preview">
 
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-        </div>
-
-        <div>
-            <div class="channel-picture">
-
-                <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+            <div class="thumbnail-row">
+    
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
             </div>
-
+    
+            <div class="vedio-info-grid">
+                <div class="channel-picture">
+    
+                    <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+                </div>
+    
+                <div class="vedio-info">
+                    <p class="vedio-title">
+                        <!-- paragraph is a block element  -->
+                    Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                    <p class="vedio-author">
+                    Marcus Brownlee
+                    <!-- paragarph will take whole line in the container not on the page -->
+                    </p>
+                    <p class="vedio-stats">
+                    3.4M views &#183; 6 months ago
+                    
+                    </p>
+        
+        
+                </div>
+    
+              
+            </div>            
+    
+    </div> 
+    <div class="vedio-preview">
+            <div class="thumbnail-row">
+    
+                    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+    </div>
+         <div class="vedio-info-grid">
+                        <div class="channel-picture">
+                            
+                           <img class="profile-picture"  src="channel-pictures/channel-2.jpeg"> 
+                        </div>
+    
+                        <div class="vedio-info">
+                            <p class="vedio-title">
+                                <!-- paragraph is a block element  -->
+                                Try Not To Laugh Challenge #9
+                            </p>
+                            <p class="vedio-author">
+                            Markiplier
+                            <!-- paragarph will take whole line in the container not on the page -->
+                            </p>
+                            <p class="vedio-stats">
+                            19M views &#183; 4 years ago
+                            
+                            </p>
+                        
+    
+                        </div>           
+            
+        </div>
+    </div>
+    
+    <div class="vedio-preview">
+    
+        <div class="thumbnail-row">
+    
+            <img class="thumbnail" src="thumbnails/thumbnail -3.webp">
+        </div>
+    
+        <div class="vedio-info-grid">
+            <div class="channel-picture">
+    
+                <img class="profile-picture" src="channel-pictures/channel-3.jpg">
+            </div>
+    
             <div class="vedio-info">
                 <p class="vedio-title">
                     <!-- paragraph is a block element  -->
-                Talking Tech and AI with Google CEO Sundar Pichai!
+               Chainsaw Man - Official Trailer (English Dub)
                 </p>
                 <p class="vedio-author">
-                Marcus Brownlee
+              MAPPA CHANNEL
                 <!-- paragarph will take whole line in the container not on the page -->
                 </p>
                 <p class="vedio-stats">
-                3.4M views &#183; 6 months ago
+                7.8M views &#183; 5 days ago
                 
                 </p>
     
     
             </div>
-
+    
           
         </div>            
-
-</div> 
-<div class="vedio-preview">
+    
+    </div> 
+    <div class="vedio-preview">
         <div class="thumbnail-row">
-
-                <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-
-        </div>
-        <div>
+    
+                <img class="thumbnail" src="thumbnails/thumbnail -4.webp">
+    </div>
+     <div class="vedio-info-grid">
                     <div class="channel-picture">
                         
-                       <img class="profile-picture"  src="channel-pictures/channel-2.jpeg"> 
+                       <img class="profile-picture"  src="channel-pictures/channel-4.jpg"> 
                     </div>
-
-         <div class="vedio-info">
-            <p class="vedio-title">
-                <!-- paragraph is a block element  -->
-                Try Not To Laugh Challenge #9
-            </p>
-            <p class="vedio-author">
-            Markiplier
-            <!-- paragarph will take whole line in the container not on the page -->
-            </p>
-            <p class="vedio-stats">
-            19M views &#183; 4 years ago
-            
-            </p>
-         
-
-         </div>           
+    
+                    <div class="vedio-info">
+                        <p class="vedio-title">
+                            <!-- paragraph is a block element  -->
+                           Anya All Funny Moments - Spy x Family
+                        </p>
+                        <p class="vedio-author">
+                        Anime Fanz
+                        <!-- paragarph will take whole line in the container not on the page -->
+                        </p>
+                        <p class="vedio-stats">
+                        231k views &#183; 3 years ago
+                        
+                        </p>
+                    
+    
+                    </div>           
         
+    </div>
+    </div>
+    
+    
+    <div class="vedio-preview">
+    
+        <div class="thumbnail-row">
+    
+            <img class="thumbnail" src="thumbnails/thumbnail -5.webp">
         </div>
+    
+        <div class="vedio-info-grid">
+            <div class="channel-picture">
+    
+                <img class="profile-picture" src="channel-pictures/channel-5.jpg">
+            </div>
+    
+            <div class="vedio-info">
+                <p class="vedio-title">
+                    <!-- paragraph is a block element  -->
+                Death Note - Kira's Laugh (Original)
+                </p>
+                <p class="vedio-author">
+                GamingG
+                <!-- paragarph will take whole line in the container not on the page -->
+                </p>
+                <p class="vedio-stats">
+                11M views &#183; 14 months ago
+                
+                </p>
+    
+    
+            </div>
+    
+          
+        </div>            
+    
+    </div> 
+    <div class="vedio-preview">
+        <div class="thumbnail-row">
+    
+                <img class="thumbnail" src="thumbnails/thumbnail -6.webp">
+    </div>
+     <div class="vedio-info-grid">
+                    <div class="channel-picture">
+                        
+                       <img class="profile-picture"  src="channel-pictures/channel-6.jpg"> 
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="vedio-title">
+                            <!-- paragraph is a block element  -->
+                           Grand Blue Funny Moments
+                        </p>
+                        <p class="vedio-author">
+                        //NadeFire//
+                        <!-- paragarph will take whole line in the container not on the page -->
+                        </p>
+                        <p class="vedio-stats">
+                        1.5M views &#183; 4 years ago
+                        
+                        </p>
+                    
+    
+                    </div>           
+        
+    </div>
+    </div>
 
-</div> 
+    </div>
+    
+
+
 <!-- It is a block element -->
 </body>
 </html>
