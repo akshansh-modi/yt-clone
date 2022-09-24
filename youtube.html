@@ -18,6 +18,9 @@ display:block;
     font-size:20px;
     margin-left:12px;
 }
+.vedio-title{
+    margin-top:0px;
+}
 .div-example{
     display:inline-block;
 }
@@ -26,6 +29,20 @@ display:block;
     display:inline-block;
     vertical-align: top;
     margin-right:15px;
+}
+.profile-picture{
+    width:100%;
+
+
+}
+.channel-picture{
+display:inline-block;
+width:50px;
+vertical-align:top;
+}
+.vedio-info{
+display:inline-block;
+width:200px;
 }
 
     </style>
@@ -37,21 +54,37 @@ display:block;
 <body>
     <input class="search-bar" type="text" placeholder="Search">
     <div class="vedio-preview">
-    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
 
-<p>
-    <!-- paragraph is a block element  -->
-Talking Tech and AI with Google CEO Sundar Pichai!
-</p>
-<p class="vedio-author">
-Marcus Brownlee
-<!-- paragarph will take whole line in the container not on the page -->
-</p>
-<p class="vedio-stats">
-3,4M views &#183; 6 months ago
+        <div>
 
-</p>
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        </div>
 
+        <div>
+            <div class="channel-picture">
+
+                <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+            </div>
+
+            <div class="vedio-info">
+                <p class="vedio-title">
+                    <!-- paragraph is a block element  -->
+                Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="vedio-author">
+                Marcus Brownlee
+                <!-- paragarph will take whole line in the container not on the page -->
+                </p>
+                <p class="vedio-stats">
+                3.4M views &#183; 6 months ago
+                
+                </p>
+    
+    
+            </div>
+
+          
+        </div>            
 
 </div> 
 <div class="vedio-preview">
