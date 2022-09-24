@@ -4,25 +4,30 @@
 
     <style>
 .thumbnail{
-
+display:block;
 width:300px;/* to keep same shape heaight will also change*/
-height:300px;
-object-fit:contain; /*contain cover */
+
+object-fit:cover;/*contain cover */
 object-position: bottom;
 border:2px;
 border-style:solid;
 border-color:red;
 }
 .search-bar{
+display:block;
     font-size:20px;
     margin-left:12px;
 }
-
-
-.vedio-stats,
-.vedio-author{
-    display: inline-block;
+.div-example{
+    display:inline-block;
 }
+.vedio-preview{
+    width:300px;
+    display:inline-block;
+    vertical-align: top;
+    margin-right:15px;
+}
+
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,8 +35,9 @@ border-color:red;
     <title>youtube.com Clone</title>
 </head>
 <body>
-    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
     <input class="search-bar" type="text" placeholder="Search">
+    <div class="vedio-preview">
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
 
 <p>
     <!-- paragraph is a block element  -->
@@ -39,11 +45,33 @@ Talking Tech and AI with Google CEO Sundar Pichai!
 </p>
 <p class="vedio-author">
 Marcus Brownlee
-
+<!-- paragarph will take whole line in the container not on the page -->
 </p>
 <p class="vedio-stats">
 3,4M views &#183; 6 months ago
 
 </p>
+
+
+</div> 
+<div class="vedio-preview">
+    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+
+<p>
+    <!-- paragraph is a block element  -->
+    Try Not To Laugh Challenge #9
+</p>
+<p class="vedio-author">
+Markiplier
+<!-- paragarph will take whole line in the container not on the page -->
+</p>
+<p class="vedio-stats">
+19M views &#183; 4 years ago
+
+</p>
+
+
+</div> 
+<!-- It is a block element -->
 </body>
 </html>
