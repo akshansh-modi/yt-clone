@@ -4,91 +4,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <style>
-        p{
-            margin:0 0 0 0;
-            font-family:Roboto,Arail;
-       /*     arial--as backup font*/
-        }
-        .thumbnail-row{
-            margin-bottom:12px;
-        }
-.thumbnail{
-width:100%;
-/* to keep same shape heaight will also change*/
-
-object-fit:cover;/*contain cover */
-object-position: bottom;
-border:2px;
-border-style:solid;
-border:none;
-}
-.search-bar{
-display:block;
-    font-size:20px;
-    margin-left:12px;
-}
-
-
-.vedio-grid{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap:16px;
-    row-gap:40px;
-
-}
-
-
-.vedio-title{
-    margin-top:0px;
-    font-size:14px;
-    font-weight:500;
-    line-height: 14px;
-    margin-bottom:12px;
-}
-.div-example{
-    display:inline-block;
-}
-.vedio-preview{
-}
-.profile-picture{
-    width:40px;
- border-radius:50px;
-
-}
-
-.vedio-info-grid{
-    display:grid;
-    grid-template-columns: 50px 1fr;
-}
-
-
-
-.channel-picture{
-
-}
-.vedio-info{
-
-}
-.vedio-stats,
-.vedio-author{
-    font-size:12px;
-    color: rgb(96,96,96);
-}
-
-.vedio-author{
-    margin-bottom:4px;
-}
-
-    </style>
+   <link rel="stylesheet" href="styles/general.css" >
+   <link rel="stylesheet" href="styles/header.css" >
+   <link rel="stylesheet" href="styles/vedio.css" >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>youtube.com Clone</title>
 </head>
 <body>
-    <input class="search-bar" type="text" placeholder="Search">
+    <div class="header">
+        <div class="left-section">left-seaction</div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+        </div>
+        <div class="right-section">right-sectoin</div>
+    
+        
+    </div>
     <div class="vedio-grid">
 
         <div class="vedio-preview">
