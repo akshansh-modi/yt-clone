@@ -74,6 +74,22 @@ align-items:center;
     border-style:solid;
     border-color:rgb(180, 178, 178);
     margin-right:10px;
+
+    position: relative;
+}
+.search-btn .tooltip{
+position:absolute;
+background-color:grey;
+color:white;
+padding:4px 8px 4px 8px;
+border-radius:2px;
+font-size:12px;
+bottom:-30px;
+opacity:0;
+}
+.search-btn:hover .tooltip{
+opacity:1;
+
 }
 .voice-search-btn{
     height:40px;
