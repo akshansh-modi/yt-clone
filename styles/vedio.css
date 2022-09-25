@@ -1,6 +1,7 @@
 
 .thumbnail-row{
     margin-bottom:12px;
+    position: relative;
 }
 .thumbnail{
 width:100%;
@@ -62,4 +63,19 @@ color: rgb(96,96,96);
 
 .vedio-author{
 margin-bottom:4px;
+}
+
+
+
+.vedio-time{
+    font-family:Roboto,Arial;
+    font-size:12px;
+    font-weight:500;
+    padding:4px 4px 4px 4px;
+    background-color:black;
+    color:white;
+    border-radius:2px;
+    position:absolute;
+    bottom:8px;
+    right:5px;
 }
