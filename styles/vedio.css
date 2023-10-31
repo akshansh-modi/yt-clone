@@ -17,13 +17,23 @@ border:none;
 
 .vedio-grid{
 display:grid;
+
 grid-template-columns: 1fr 1fr 1fr;
 column-gap:16px;
 row-gap:40px;
 
+
 }
-
-
+@media screen and (max-width: 768px) {
+    .vedio-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}   
+@media screen and (max-width: 480px) {
+    .vedio-grid{
+        grid-template-columns: 1fr;
+    }
+}
 .vedio-title{
 margin-top:0px;
 font-size:14px;
